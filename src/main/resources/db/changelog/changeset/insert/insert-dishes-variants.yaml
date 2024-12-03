@@ -1,0 +1,262 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert_dish_variants
+      author: noverlin
+      changes:
+        - insert:
+            tableName: dish_variants
+            columns:
+              # Варианты для Эспрессо
+              - column:
+                  name: id
+                  valueNumeric: 1
+              - column:
+                  name: name
+                  value: "50 мл"
+              - column:
+                  name: additional_price
+                  valueNumeric: 0.00
+              - column:
+                  name: dish_id
+                  valueNumeric: 1
+
+              - column:
+                  name: id
+                  valueNumeric: 2
+              - column:
+                  name: name
+                  value: "100 мл"
+              - column:
+                  name: additional_price
+                  valueNumeric: 0.50
+              - column:
+                  name: dish_id
+                  valueNumeric: 1
+
+              # Варианты для Латте
+              - column:
+                  name: id
+                  valueNumeric: 3
+              - column:
+                  name: name
+                  value: "200 мл"
+              - column:
+                  name: additional_price
+                  valueNumeric: 0.00
+              - column:
+                  name: dish_id
+                  valueNumeric: 2
+
+              - column:
+                  name: id
+                  valueNumeric: 4
+              - column:
+                  name: name
+                  value: "300 мл"
+              - column:
+                  name: additional_price
+                  valueNumeric: 0.70
+              - column:
+                  name: dish_id
+                  valueNumeric: 2
+
+              - column:
+                  name: id
+                  valueNumeric: 5
+              - column:
+                  name: name
+                  value: "400 мл"
+              - column:
+                  name: additional_price
+                  valueNumeric: 1.20
+              - column:
+                  name: dish_id
+                  valueNumeric: 2
+
+              # Варианты для Капучино
+              - column:
+                  name: id
+                  valueNumeric: 6
+              - column:
+                  name: name
+                  value: "200 мл"
+              - column:
+                  name: additional_price
+                  valueNumeric: 0.00
+              - column:
+                  name: dish_id
+                  valueNumeric: 3
+
+              - column:
+                  name: id
+                  valueNumeric: 7
+              - column:
+                  name: name
+                  value: "300 мл"
+              - column:
+                  name: additional_price
+                  valueNumeric: 0.60
+              - column:
+                  name: dish_id
+                  valueNumeric: 3
+
+              - column:
+                  name: id
+                  valueNumeric: 8
+              - column:
+                  name: name
+                  value: "400 мл"
+              - column:
+                  name: additional_price
+                  valueNumeric: 1.10
+              - column:
+                  name: dish_id
+                  valueNumeric: 3
+
+              # Варианты для Американо
+              - column:
+                  name: id
+                  valueNumeric: 9
+              - column:
+                  name: name
+                  value: "200 мл"
+              - column:
+                  name: additional_price
+                  valueNumeric: 0.00
+              - column:
+                  name: dish_id
+                  valueNumeric: 4
+
+              - column:
+                  name: id
+                  valueNumeric: 10
+              - column:
+                  name: name
+                  value: "300 мл"
+              - column:
+                  name: additional_price
+                  valueNumeric: 0.50
+              - column:
+                  name: dish_id
+                  valueNumeric: 4
+
+              - column:
+                  name: id
+                  valueNumeric: 11
+              - column:
+                  name: name
+                  value: "400 мл"
+              - column:
+                  name: additional_price
+                  valueNumeric: 1.00
+              - column:
+                  name: dish_id
+                  valueNumeric: 4
+
+              # Варианты для Сэндвичей
+              # Сэндвич с курицей
+              - column:
+                  name: id
+                  valueNumeric: 12
+              - column:
+                  name: name
+                  value: "Курица"
+              - column:
+                  name: additional_price
+                  valueNumeric: 0.00
+              - column:
+                  name: dish_id
+                  valueNumeric: 8
+
+              - column:
+                  name: id
+                  valueNumeric: 13
+              - column:
+                  name: name
+                  value: "Бекон"
+              - column:
+                  name: additional_price
+                  valueNumeric: 0.50
+              - column:
+                  name: dish_id
+                  valueNumeric: 8
+
+              # Сэндвич с ветчиной и сыром
+              - column:
+                  name: id
+                  valueNumeric: 14
+              - column:
+                  name: name
+                  value: "Ветчина"
+              - column:
+                  name: additional_price
+                  valueNumeric: 0.00
+              - column:
+                  name: dish_id
+                  valueNumeric: 9
+
+              - column:
+                  name: id
+                  valueNumeric: 15
+              - column:
+                  name: name
+                  value: "Сыр"
+              - column:
+                  name: additional_price
+                  valueNumeric: 0.00
+              - column:
+                  name: dish_id
+                  valueNumeric: 9
+
+              - column:
+                  name: id
+                  valueNumeric: 16
+              - column:
+                  name: name
+                  value: "Дополнительный сыр"
+              - column:
+                  name: additional_price
+                  valueNumeric: 0.70
+              - column:
+                  name: dish_id
+                  valueNumeric: 9
+
+              # Вегетарианский сэндвич
+              - column:
+                  name: id
+                  valueNumeric: 17
+              - column:
+                  name: name
+                  value: "Авокадо"
+              - column:
+                  name: additional_price
+                  valueNumeric: 0.80
+              - column:
+                  name: dish_id
+                  valueNumeric: 10
+
+              - column:
+                  name: id
+                  valueNumeric: 18
+              - column:
+                  name: name
+                  value: "Тофу"
+              - column:
+                  name: additional_price
+                  valueNumeric: 0.90
+              - column:
+                  name: dish_id
+                  valueNumeric: 10
+
+              - column:
+                  name: id
+                  valueNumeric: 19
+              - column:
+                  name: name
+                  value: "Грибы"
+              - column:
+                  name: additional_price
+                  valueNumeric: 0.60
+              - column:
+                  name: dish_id
+                  valueNumeric: 10

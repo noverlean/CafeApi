@@ -1,0 +1,51 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-users-table
+      author: noverlin
+      changes:
+        - createTable:
+            tableName: users
+            schemaName: cafe_db
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: username
+                  type: text
+                  constraints:
+                    nullable: true
+              - column:
+                  name: name
+                  type: text
+                  constraints:
+                    nullable: true
+              - column:
+                  name: avatar
+                  type: text
+                  constraints:
+                    nullable: true
+              - column:
+                  name: email
+                  type: varchar(255)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: email_verified
+                  type: boolean
+                  constraints:
+                    nullable: true
+              - column:
+                  name: lastVisit
+                  type: timestamp
+                  constraints:
+                    nullable: true
+              - column:
+                  name: password
+                  type: varchar(255)
+                  constraints:
+                    nullable: true

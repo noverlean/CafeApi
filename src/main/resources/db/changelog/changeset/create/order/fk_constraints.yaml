@@ -1,0 +1,24 @@
+databaseChangeLog:
+  - changeSet:
+      id: 5
+      author: noverlin
+      changes:
+        - addForeignKeyConstraint:
+            baseTableName: order_items
+            baseColumnNames: dish_id
+            constraintName: fk_order_items_dish
+            referencedTableName: dishes
+            referencedColumnNames: id
+            schemaName: public
+
+  - changeSet:
+      id: 6
+      author: noverlin
+      changes:
+        - addForeignKeyConstraint:
+            baseTableName: order_items
+            baseColumnNames: variant_id
+            constraintName: fk_order_items_variant
+            referencedTableName: dish_variants
+            referencedColumnNames: id
+            schemaName: public

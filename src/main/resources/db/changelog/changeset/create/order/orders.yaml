@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - changeSet:
+      id: 4
+      author: noverlin
+      changes:
+        - createTable:
+            tableName: orders
+            schemaName: public
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: total_price
+                  type: decimal(10, 2)
+                  constraints:
+                    nullable: false

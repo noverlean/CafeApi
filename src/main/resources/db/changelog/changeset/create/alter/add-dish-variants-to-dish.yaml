@@ -1,0 +1,20 @@
+databaseChangeLog:
+  - changeSet:
+      id: 3
+      author: noverlin
+      changes:
+        - addColumn:
+            tableName: dish_variants
+            schemaName: public
+            columns:
+              - column:
+                  name: dish_id
+                  type: bigint
+                  constraints:
+                    nullable: false
+        - addForeignKeyConstraint:
+            baseTableName: dish_variants
+            baseColumnNames: dish_id
+            constraintName: fk_dish_variants_dish_id
+            referencedTableName: dishes
+            referencedColumnNames: id

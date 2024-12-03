@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-schema
+      author: noverlin
+      changes:
+        - sql:
+            sql: "CREATE SCHEMA IF NOT EXISTS account_management_db;"
