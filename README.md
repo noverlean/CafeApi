@@ -4,7 +4,7 @@
 
 # ☕ CafeApi — Coffee Shop Server with Remote Ordering
 
-CafeApi is a backend application for a coffee shop that enables remote ordering and pickup. Inspired by the HotFix concept, it allows users to place orders in advance and pick them up when ready. The project showcases a modern tech stack including Docker, Spring Boot, and OpenAPI.
+CafeApi is a backend application for a coffee shop that enables remote ordering and pickup. Inspired by the HotFix concept, it allows users to place orders in advance and pick them up when ready! The project showcases a modern tech stack including Docker, Spring Boot, and OpenAPI.
 
 ---
 
