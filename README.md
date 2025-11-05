@@ -6,6 +6,8 @@
 
 CafeApi is a backend application for a coffee shop that enables remote ordering and pickup. Inspired by the HotFix concept, it allows users to place orders in advance and pick them up when ready! The project showcases a modern tech stack including Docker, Spring Boot, and OpenAPI.
 
+Sorry, recently, I reset my OS and forgot to check how to later update my origin branch on Git. As a result, here you can see a very old version of the project repository, without OpenAPI declarations and with many samples of backend code.
+
 ---
 
 ## ⚙️ Core Features
